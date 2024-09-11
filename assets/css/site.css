@@ -1,0 +1,445 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #711f04;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li {
+  margin: 0;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  main,
+  header,
+  aside {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  ul {
+    width: 100%;
+    display: flex;
+    padding: 5%;
+    flex-wrap: wrap;
+    background-color: #fef7e2;
+    width: 100%;
+    justify-content: space-evenly;
+    border-radius: 100px;
+    padding: 5%;
+  }
+
+  li:not(:first-of-type) {
+    width: 42%;
+    font-size: 120%;
+    font-weight: 700;
+    border-radius: 50px;
+    background-color: #ffdf7f;
+    text-align: center;
+    padding: 5%;
+    margin: 4%;
+  }
+
+  li:first-of-type {
+    text-align: center;
+    font-size: 200%;
+    font-weight: 700;
+    border-radius: 50px;
+    width: 88%;
+    background-color: #ffdf7f;
+    padding: 10%;
+    margin: 10px;
+  }
+
+  li img {
+    vertical-align: middle;
+    margin-right: 10%;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 220%;
+    line-height: 1;
+    font-weight: 900;
+    margin-bottom: 14%;
+  }
+
+  .bio-honey-card {
+    border-radius: 50px;
+    margin-bottom: 30px;
+    background-color: #fef7e2;
+    overflow: hidden;
+  }
+
+  .bio-honey-card img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .text-container {
+    display: flex;
+    gap: 30%;
+    padding: 20px 50px;
+    text-align: center;
+  }
+
+  .text p:first-of-type {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+
+  .text p:last-of-type {
+    font-size: 1em;
+  }
+
+  .price {
+    margin-top: 3%;
+    font-size: 1.2em;
+    margin-bottom: 5%;
+  }
+
+  main button {
+    background-color: #ffdf7f;
+    border: none;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-left: 25%;
+    margin-bottom: 5%;
+    cursor: pointer;
+  }
+
+  h2 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 1.4em;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+
+  .last {
+    background-color: #fef7e2;
+    padding: 30px;
+    border-radius: 30px;
+  }
+
+  .last p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  main,
+  aside {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #fef7e2;
+    width: 100%;
+    justify-content: space-between;
+    padding: 2%;
+    align-content: flex-start;
+    align-items: center;
+  }
+
+  li {
+    font-size: 90%;
+    font-weight: 700;
+    border-radius: 50px;
+    background-color: #ffdf7f;
+    text-align: center;
+    padding: 3% 0.8%;
+    margin: 2px;
+  }
+
+  li img {
+    vertical-align: middle;
+    margin-right: 10%;
+  }
+
+  /*order*/
+  li:nth-of-type(1) {
+    text-align: center;
+    font-size: 150%;
+    font-weight: 700;
+    border-radius: 50px;
+    width: 30%;
+    background-color: #ffdf7f;
+    padding: 4% 0.2%;
+    margin: 10px;
+  }
+
+  li:nth-of-type(2) {
+    order: -1;
+  }
+
+  li:nth-of-type(3) {
+    order: -1;
+  }
+
+  h1 {
+    font-size: 240%;
+    line-height: 1;
+    font-weight: 900;
+    margin-bottom: 5%;
+  }
+
+  .bio-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .bio-honey-card {
+    border-radius: 50px;
+    margin-bottom: 30px;
+    background-color: #fef7e2;
+    overflow: hidden;
+    width: 45%;
+  }
+
+  .bio-honey-card img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .text-container {
+    display: flex;
+    gap: 30%;
+    padding: 10px 12px;
+    margin: 5px 2px;
+    text-align: center;
+  }
+
+  .text p:first-of-type {
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+
+  .text p:last-of-type {
+    font-size: 0.8em;
+  }
+
+  .price {
+    margin-top: 3%;
+    font-size: 0.9em;
+    margin-bottom: 5%;
+  }
+
+  main button {
+    background-color: #ffdf7f;
+    border: none;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 0.8em;
+    padding: 7px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    cursor: pointer;
+  }
+
+  h2 {
+    font-weight: 800;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 1.4em;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+
+  .last {
+    background-color: #fef7e2;
+    padding: 30px;
+    border-radius: 30px;
+  }
+
+  .last p {
+    font-size: 0.9em;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+  }
+
+  header {
+    width: 15%;
+    position: fixed;
+  }
+
+  main {
+    width: 100%;
+    margin: 0 10px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-left: 16%;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #fef7e2;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 10%;
+    height: 100vh;
+    position: sticky;
+    width: 100%;
+  }
+
+  li img {
+    vertical-align: middle;
+    margin-right: 10%;
+  }
+
+  /*order*/
+  li {
+    text-align: center;
+    font-size: 120%;
+    font-weight: 700;
+    border-radius: 50px;
+    width: 20%;
+    background-color: #ffdf7f;
+    padding: 4% 0.2%;
+    width: 100%;
+  }
+
+  li:not(:first-of-type) {
+    font-size: 0.9em;
+  }
+
+  h1 {
+    font-size: 220%;
+    line-height: 1;
+    font-weight: 900;
+    margin-bottom: 5%;
+    margin-left: 0;
+  }
+
+  .bio-card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .bio-honey-card {
+    border-radius: 20px;
+    margin-bottom: 30px;
+    background-color: #fef7e2;
+    overflow: hidden;
+    width: 45%;
+  }
+
+  .bio-honey-card img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .text-container {
+    display: flex;
+    gap: 30%;
+    padding: 10px 12px;
+    margin: 5px 2px;
+    text-align: center;
+  }
+
+  .text {
+    text-align: left;
+    width: 80%;
+  }
+
+  .text p:first-of-type {
+    font-size: 0.75em;
+    font-weight: 600;
+  }
+
+  .text p:last-of-type {
+    font-size: 0.7em;
+  }
+
+  .price {
+    margin-top: 3%;
+    font-size: 0.9em;
+    margin-bottom: 5%;
+  }
+
+  main button {
+    background-color: #ffdf7f;
+    border: none;
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+    font-size: 0.7em;
+    padding: 3.5px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    cursor: pointer;
+  }
+
+  h2 {
+    font-weight: 800;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 1.4em;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+
+  .last {
+    background-color: #fef7e2;
+    padding: 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .last p {
+    font-size: 0.8em;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .last img {
+    width: 50%;
+  }
+}
